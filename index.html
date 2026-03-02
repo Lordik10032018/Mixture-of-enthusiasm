@@ -16,7 +16,7 @@
       href="https://unpkg.com/modern-normalize/modern-normalize.css"
     />
     <script type="module" crossorigin src="/Mixture-of-enthusiasm/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Mixture-of-enthusiasm/assets/index-ONyPHYxE.css">
+    <link rel="stylesheet" crossorigin href="/Mixture-of-enthusiasm/assets/index-B2A25h-l.css">
   </head>
   <body>
     <header class="header">
@@ -41,7 +41,7 @@
           </li>
         </ul>
       </nav>
-      <button id="burgerOpenMenu" type="button" class="header__burger-menu">
+      <button type="button" id="openBurgerMenu" class="header__burger-menu">
         <svg class="header__burger-icon" width="24" height="24">
           <use href="/Mixture-of-enthusiasm/assets/sprite-BdryCgqv.svg#menu"></use>
         </svg>
@@ -81,12 +81,12 @@
     </main>
 
     
-    <div class="modal-brg">
+    <div class="modal-brg is-hidden" id="modalBrg">
   <div class="container modal-brg--container">
     <!-- #region wrapper -->
     <div class="modal-brg__wrapper">
       <!-- #region btn-close -->
-      <button class="modal-brg__close">
+      <button class="modal-brg__close" id="closeBurgerMenu">
         <svg width="24" height="24">
           <use href="/Mixture-of-enthusiasm/assets/sprite-BdryCgqv.svg#x"></use>
         </svg>
@@ -130,7 +130,9 @@
     </nav>
     <!-- #endregion nav-menu -->
     <!-- #region btn-second -->
-    <a href="#pricing" class="btn modal-brg__second-btn">Join Now</a>
+    <div>
+      <a href="#pricing" class="btn modal-brg__second-btn">Join Now</a>
+    </div>
     <!-- #endregion btn-second -->
   </div>
 </div>
